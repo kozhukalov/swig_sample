@@ -1,7 +1,7 @@
 math_wrap.cxx math.go: math.i
 	swig -c++ -go -intgosize 64 -gccgo math.i
 
-math.o: math.cpp math_wrap.cxx
+math.o math_wrap.o: math.cpp math_wrap.cxx
 	g++ -c -fpic math.cpp math_wrap.cxx
 
 libmath.so: math.o math_wrap.o
