@@ -9,4 +9,4 @@ libmath.so: math.o math_wrap.o
 
 .PHONY: clean
 clean:
-	rm -f math_wrap.cxx math.o math_wrap.o libmath.so
+	rm -f math_wrap.cxx math.go math.o math_wrap.o libmath.so
